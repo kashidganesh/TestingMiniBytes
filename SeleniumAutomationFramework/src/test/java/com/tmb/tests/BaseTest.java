@@ -13,7 +13,7 @@ import org.testng.annotations.BeforeSuite;
 
 import com.tmb.driver.Driver;
 import com.tmb.reports.ExtentReport;
-//Base Test class
+
 public class BaseTest {
 
 	protected BaseTest() {
