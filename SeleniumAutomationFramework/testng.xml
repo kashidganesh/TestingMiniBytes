@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" data-provider-thread-count="3"
+	parallel="methods" thread-count="2">
+	<listeners>
+		<listener class-name="com.tmb.listeners.ListenerClass"></listener>
+		<listener class-name="com.tmb.listeners.MethodInterceptor"></listener>
+	</listeners>
+	<test thread-count="1" name="Test" parallel="methods">
+		<!-- <groups> <run> <include name="gruop1"></include> </run> </groups> -->
+
+		<classes>
+			<class name="com.tmb.tests.OrangeHRMTests" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
